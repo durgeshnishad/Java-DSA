@@ -1,6 +1,6 @@
 //Program to perform arithmetic calculation based on the users choice
 import java.util.*;
-public class Calculator {
+public class C8 {
     public static void main(String args[]){
         Scanner sc= new Scanner(System.in);
         int n,a,b;
