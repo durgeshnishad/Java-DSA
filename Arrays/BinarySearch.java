@@ -1,14 +1,14 @@
 import java.util.*;
 public class BinarySearch {
     public static int BS(int n[], int size, int nsearch){
-        int start=0,end=size,mid;
+        int start=0,end=size-1,mid;
         while(start<=end){
             mid=(start+end)/2;
             if(nsearch>n[mid]){
-                start=mid;
+                start=mid+1;
             }
             else if(nsearch<n[mid]){
-                end=mid;
+                end=mid-1;
             }
             else
                 return mid;
@@ -28,9 +28,9 @@ public class BinarySearch {
         System.out.println("enter the number to be searched");
         nsearch=sc.nextInt();
         int t=BS(n,size,nsearch);
-        if(t==-1)
-            System.out.println("Not Found");
-        else
+        if(t!=-1)
             System.out.println("Found");
+        else
+            System.out.println("NotFound");
     }
 }
