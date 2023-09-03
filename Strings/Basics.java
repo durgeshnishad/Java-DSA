@@ -10,5 +10,18 @@ public class Basics {
         System.out.println(str+" "+str1+" "+str2);
         System.out.println(str.length());
         System.out.println(str.charAt(1));
-    }
+
+        if(str.equals(str2))
+            System.out.println("Equal");
+        else
+            System.out.println("Not Equal");
+        /*
+          str1.compareTo(str2):
+          0= same
+          +ve: str>str2
+          -ve: str1<str2
+         */
+        if(str1.compareTo(str2)==0)
+            System.out.println("Same");
+    }   
 }
