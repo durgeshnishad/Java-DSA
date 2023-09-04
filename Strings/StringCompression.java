@@ -12,6 +12,7 @@ public class StringCompression {
                 count=1;
             }
         }
+        s.append(ch).append(count);
         return s.toString();
     }
     public static void main(String args[]){
